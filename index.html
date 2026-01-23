@@ -1,7 +1,7 @@
 <html lang="zh-CN"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>红楼梦戏院2048</title>
+  <title>红楼梦戏院2048 | A Dream of the Red Mansions Theater 2048</title>
   <!-- Tailwind CSS v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome -->
@@ -270,12 +270,12 @@
       <!-- 标题区 -->
       <header class="mb-8 text-center">
         <div class="flex justify-center items-center relative">
-          <h1 class="text-3xl md:text-4xl font-inter text-primary">红楼梦戏院2048</h1>
+          <h1 class="text-3xl md:text-4xl font-inter text-primary">红楼梦戏院2048<br><span class="text-xl">A Dream of the Red Mansions Theater 2048</span></h1>
           <div class="absolute right-0 md:right-auto md:left-full md:ml-4 top-0 transform md:translate-x-0 translate-x-16 -translate-y-4 bg-white px-2 py-1 rounded">
-            <span class="text-lg font-inter text-red-800">石记</span>
+            <span class="text-lg font-inter text-red-800">石记<br><span class="text-sm">Stone's Record</span></span>
           </div>
         </div>
-        <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto font-inter">轻移方向，合并同类，从小丫鬟至太虚仙境，层层递进</p>
+        <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto font-inter">轻移方向，合并同类，从小丫鬟至太虚仙境，层层递进<br><span class="text-sm">Move tiles, merge pairs, from little maid to the Land of Illusion, progressing step by step</span></p>
       </header>
 
       <!-- 主要内容区 -->
@@ -290,11 +290,11 @@
             <!-- 分数区域 -->
             <div class="flex justify-between mt-3 text-white">
               <div class="flex flex-col items-center">
-                <span class="text-sm opacity-75 font-inter" style="font-weight: bold; font-size: 16px;">当前赢银</span>
+                <span class="text-sm opacity-75 font-inter" style="font-weight: bold; font-size: 16px;">当前赢银<br><span class="text-xs">Current Score</span></span>
                 <span class="text-xl font-bold font-inter" id="score">0</span>
               </div>
               <div class="flex flex-col items-center">
-                <span class="text-sm opacity-75 font-inter" style="font-weight: bold; font-size: 16px;">最高殊荣</span>
+                <span class="text-sm opacity-75 font-inter" style="font-weight: bold; font-size: 16px;">最高殊荣<br><span class="text-xs">Best Score</span></span>
                 <span class="text-xl font-bold font-inter" id="best-score">0</span>
               </div>
             </div>
@@ -303,11 +303,11 @@
           <!-- 游戏结束/胜利消息 -->
           <div class="game-message" id="game-message">
             <div class="victory-card bg-white bg-opacity-90 p-8 rounded-lg shadow-xl max-w-md">
-              <div class="message" id="message-text">游戏胜利!</div>
-              <div class="quote" id="quote-text">太虚幻境乃天上之境...「千红一哭，万艳同悲」</div>
+              <div class="message" id="message-text">游戏胜利!<br><span class="text-xl">You Win!</span></div>
+              <div class="quote" id="quote-text">太虚幻境乃天上之境...「千红一哭，万艳同悲」<br><span class="text-sm">The Land of Illusion is a heavenly realm... "A thousand reds weep, ten thousand beauties grieve"</span></div>
               <div class="flex gap-4 justify-center">
-                <button id="try-again-btn" class="bg-primary text-white hover:bg-opacity-80">再探</button>
-                <button id="continue-btn" class="bg-gray-200 hover:bg-gray-300 hidden">继续游历</button>
+                <button id="try-again-btn" class="bg-primary text-white hover:bg-opacity-80">再探<br><span class="text-xs">Try Again</span></button>
+                <button id="continue-btn" class="bg-gray-200 hover:bg-gray-300 hidden">继续游历<br><span class="text-xs">Keep Going</span></button>
               </div>
             </div>
           </div>
@@ -315,54 +315,54 @@
 
         <!-- 右侧自定义区 -->
         <div class="w-full md:w-64 glass-effect rounded-lg p-6" style="min-height: 530px; align-self: flex-start; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);">
-          <h2 class="text-2xl font-inter text-center mb-4 ink-stroke inline-block relative" style="font-size: 20px;">潇湘馆画案</h2>
+          <h2 class="text-2xl font-inter text-center mb-4 ink-stroke inline-block relative" style="font-size: 20px;">潇湘馆画案<br><span class="text-sm">Xiaoxiang Pavilion Desk</span></h2>
 
           <!-- 人物下拉选择 -->
           <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">人物选择</label>
+            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">人物选择<br><span class="text-xs">Character Selection</span></label>
             <div class="custom-select">
               <select id="character-select">
-                <option value="">选择人物...</option>
-                <option value="2">2-坠儿</option>
-                <option value="4">4-袭人</option>
-                <option value="8">8-平儿</option>
-                <option value="16">16-迎春</option>
-                <option value="32">32-探春</option>
-                <option value="64">64-惜春</option>
-                <option value="128">128-林黛玉</option>
-                <option value="256">256-薛宝钗</option>
-                <option value="512">512-王熙凤</option>
-                <option value="1024">1024-贾母</option>
-                <option value="2048">2048-警幻仙子</option>
+                <option value="">选择人物... / Select Character...</option>
+                <option value="2">2-坠儿 / Zhui'er</option>
+                <option value="4">4-袭人 / Xiren</option>
+                <option value="8">8-平儿 / Ping'er</option>
+                <option value="16">16-迎春 / Yingchun</option>
+                <option value="32">32-探春 / Tanchun</option>
+                <option value="64">64-惜春 / Xichun</option>
+                <option value="128">128-林黛玉 / Lin Daiyu</option>
+                <option value="256">256-薛宝钗 / Xue Baochai</option>
+                <option value="512">512-王熙凤 / Wang Xifeng</option>
+                <option value="1024">1024-贾母 / Grandmother Jia</option>
+                <option value="2048">2048-警幻仙子 / Disenchantment Fairy</option>
               </select>
             </div>
           </div>
 
           <!-- 被选择人物预览 -->
           <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">预览</label>
+            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">预览<br><span class="text-xs">Preview</span></label>
             <div class="portrait-preview" id="portrait-preview">
               <img src="" alt="人物预览" id="preview-image" class="hidden">
-              <span id="preview-placeholder" class="text-gray-400">选择人物</span>
+              <span id="preview-placeholder" class="text-gray-400">选择人物<br><span class="text-xs">Select Character</span></span>
             </div>
           </div>
 
           <!-- 上传提示 -->
           <div class="mb-6">
-            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">自定义头像</label>
+            <label class="block text-sm font-medium text-gray-700 mb-2 font-inter">自定义头像<br><span class="text-xs">Custom Avatar</span></label>
             <label for="image-upload" class="upload-btn text-center w-full cursor-pointer">
               <input type="file" id="image-upload" accept="image/*" class="hidden">
-              <span class="font-inter">点此砚墨作画</span>
-              <p class="text-xs text-gray-500 mt-1 font-inter">建议上传1:1比例图片</p>
+              <span class="font-inter">点此砚墨作画<br><span class="text-xs">Click to Upload</span></span>
+              <p class="text-xs text-gray-500 mt-1 font-inter">建议上传1:1比例图片<br><span class="text-xs">Recommend 1:1 ratio image</span></p>
             </label>
           </div>
 
           <!-- 复原描摹按钮 -->
-          <button id="restore-btn" class="restore-btn w-full font-inter">复原描摹</button>
+          <button id="restore-btn" class="restore-btn w-full font-inter">复原描摹<br><span class="text-xs">Restore Default</span></button>
 
           <!-- 悔棋按钮 -->
           <button id="undo-btn" class="mt-4 w-full bg-primary text-white py-2 px-4 rounded hover:bg-opacity-80 transition-colors font-inter">
-            <i class="fa fa-undo mr-2"></i>锦囊妙计
+            <i class="fa fa-undo mr-2"></i>锦囊妙计<br><span class="text-xs">Undo</span>
           </button>
 
         </div>
@@ -370,7 +370,7 @@
 
       <!-- 操作提示 -->
       <div class="mt-12 text-center text-gray-600 text-sm">
-        <p class="font-inter">操作方式：键盘方向键 ↑ ↓ ← → 或触摸滑动</p>
+        <p class="font-inter">操作方式：键盘方向键 ↑ ↓ ← → 或触摸滑动<br><span class="text-xs">Controls: Arrow keys ↑ ↓ ← → or touch swipe</span></p>
       </div>
     </div>
   </div>
@@ -379,58 +379,58 @@
     // 角色配置表
     const characterConfig = {
       2: {
-        name: "坠儿",
-        description: "小丫鬟",
+        name: "坠儿 / Zhui'er",
+        description: "小丫鬟 / Little Maid",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/43ef289bd0080031fc20c9f11722f4e0_1761190154418508276.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550154&x-signature=VTlqMCxlfnmWQBdPb9X0o3LLObc%3D"
       },
       4: {
-        name: "袭人",
-        description: "侍女",
+        name: "袭人 / Xiren",
+        description: "侍女 / Maidservant",
         image: "https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/70c784fea2cfbc20ef37cd6e43d00777_1761190243880047748.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550243&x-signature=fuHcLlYWJT59Q2ZAmXbUpeThidw%3D"
       },
       8: {
-        name: "平儿",
-        description: "少妇",
+        name: "平儿 / Ping'er",
+        description: "少妇 / Young Lady",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/fa41bdb6766e539a1067eeae7cf4a1a9_1761190262480995207.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550262&x-signature=f6CuFXJqt8bhD9djwsDoR2%2FcrVM%3D"
       },
       16: {
-        name: "迎春",
-        description: "小姐",
+        name: "迎春 / Yingchun",
+        description: "小姐 / Young Miss",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/c9e5d8f437eeb4e2c56aae0c2dac7fff_1761190325720735708.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550326&x-signature=ofA%2FffK%2B2s92Kmm4I%2F%2FRVlyRQOE%3D"
       },
       32: {
-        name: "探春",
-        description: "小姐",
+        name: "探春 / Tanchun",
+        description: "小姐 / Young Miss",
         image: "https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/b459218b29a016888891f65323ffa076_1761190344944765585.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550345&x-signature=0f44RTTCuRzvl9PwQH0qnmonun0%3D"
       },
       64: {
-        name: "惜春",
-        description: "小姐",
+        name: "惜春 / Xichun",
+        description: "小姐 / Young Miss",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/f1896a7199b09bdc0fb1a9491fdab79b_1761190362759187649.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550362&x-signature=3iesarW0FZZHmiz4ggUa6tieSuI%3D"
       },
       128: {
-        name: "林黛玉",
-        description: "才女",
+        name: "林黛玉 / Lin Daiyu",
+        description: "才女 / Talented Lady",
         image: "https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/383e27481757a303661c768a16283333_1761190377392210340.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550377&x-signature=AA4IYmJcyt%2B5uJvnn22NBnn5qto%3D"
       },
       256: {
-        name: "薛宝钗",
-        description: "淑女",
+        name: "薛宝钗 / Xue Baochai",
+        description: "淑女 / Virtuous Lady",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/0fb9f4c3e8c5da17de4f6a81877194fc_1761190395126585144.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550395&x-signature=VVWQI45pr31ZEk4xeFklJjtO7t8%3D"
       },
       512: {
-        name: "王熙凤",
-        description: "少奶奶",
+        name: "王熙凤 / Wang Xifeng",
+        description: "少奶奶 / Young Mistress",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/6a159de12d6b3552a8d3a75bcaabe3ba_1761190419632157406.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550419&x-signature=t4v0Sl%2F7N4nxWXXblFHK5o3f2%2B4%3D"
       },
       1024: {
-        name: "贾母",
-        description: "老太太",
+        name: "贾母 / Grandmother Jia",
+        description: "老太太 / Old Matriarch",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/58205310564e2adba5708bef8fb45876_1761190437825693286.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550437&x-signature=PZFj7rjTADDcF%2FySeIKzQ1sFB4U%3D"
       },
       2048: {
-        name: "警幻仙子",
-        description: "仙女",
+        name: "警幻仙子 / Disenchantment",
+        description: "仙女 / Fairy",
         image: "https://p3-flow-imagex-sign.byteimg.com/ocean-cloud-tos/image_generation/a35f6b024e0f984ab97775a1da732d27_1761190462790562252.jpeg~tplv-a9rns2rl98-image.jpeg?rk3s=25bff839&x-expires=2076550462&x-signature=leCWoQs3ZMDMkYJEGvJgcaXJdJk%3D"
       }
     };
@@ -966,8 +966,8 @@
             for (let j = 0; j < this.size; j++) {
               if (this.board[i][j] === 2048) {
                 this.won = true;
-                this.messageText.textContent = '太虚幻境';
-                this.quoteText.textContent = '太虚幻境乃天上之境...「千红一哭，万艳同悲」';
+                this.messageText.innerHTML = '太虚幻境<br><span class="text-xl">Land of Illusion</span>';
+                this.quoteText.innerHTML = '太虚幻境乃天上之境...「千红一哭，万艳同悲」<br><span class="text-sm">The Land of Illusion is a heavenly realm... "A thousand reds weep, ten thousand beauties grieve"</span>';
                 this.gameMessage.classList.add('game-won');
                 this.continueBtn.classList.remove('hidden');
                 return;
@@ -1004,8 +1004,8 @@
 
         // 没有空格子且没有可合并的棋子，游戏结束
         this.over = true;
-        this.messageText.textContent = '盛筵必散';
-        this.quoteText.textContent = '盛筵必散，且待重来';
+        this.messageText.innerHTML = '盛筵必散<br><span class="text-xl">All Feasts Must End</span>';
+        this.quoteText.innerHTML = '盛筵必散，且待重来<br><span class="text-sm">All feasts must end, let us try again</span>';
         this.gameMessage.classList.add('game-over');
         this.continueBtn.classList.add('hidden');
       }
@@ -1111,7 +1111,7 @@
 
           if (file) {
             if (!value) {
-              alert('请先选择要自定义的人物角色');
+              alert('请先选择要自定义的人物角色 / Please select a character first');
               e.target.value = ''; // 清空文件选择
               return;
             }
@@ -1135,10 +1135,10 @@
                 // 重新渲染棋盘以应用新头像
                 this.renderBoard();
 
-                alert('自定义头像上传成功!');
+                alert('自定义头像上传成功! / Custom avatar uploaded successfully!');
               }).catch((error) => {
                 console.error('Failed to cache uploaded image:', error);
-                alert('头像上传失败，请重试!');
+                alert('头像上传失败，请重试! / Upload failed, please try again!');
               });
             };
 
